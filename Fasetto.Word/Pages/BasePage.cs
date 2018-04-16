@@ -9,8 +9,16 @@ namespace Fasetto.Word
     /// <summary>
     /// a base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage : Page
+    public class BasePage<VM> : Page
+        where VM : BaseViewModel, new()
     {
+        #region Private Members
+        /// <summary>
+        /// Viewmodel associated with this page
+        /// </summary>
+        private VM mViewModel { get; set; }
+        #endregion
+
         #region Public Properties
         /// <summary>
         /// The animation that plays when the page first loads
@@ -27,6 +35,27 @@ namespace Fasetto.Word
         /// </summary>
         public float SlideSeconds { get; set; } = 0.8f;
 
+        /// <summary>
+        /// Viewmodel associated with this page
+        /// </summary>
+        public VM ViewModel
+        {
+            get
+            {
+                return mViewModel;
+            }
+            set
+            {
+                //If nothing has changed return
+                if (mViewModel == value)
+                    return;
+                //update the value
+                mViewModel = value;
+
+                //Set the data context for this page
+                this.DataContext = mViewModel;
+            }
+        }
 
         #endregion
 
@@ -42,6 +71,9 @@ namespace Fasetto.Word
 
             //Listen out for the page loading
             this.Loaded += BasePage_Loaded;
+
+            //Create a default view model
+            this.ViewModel = new VM();
         }
         #endregion
 

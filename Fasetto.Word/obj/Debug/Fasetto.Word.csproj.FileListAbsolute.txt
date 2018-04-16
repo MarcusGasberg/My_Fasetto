@@ -27,6 +27,11 @@ C:\Users\Marcus Gasberg\source\repos\Fasetto.Word\Fasetto.Word\obj\Debug\Fasetto
 C:\Users\Marcus Gasberg\source\repos\Fasetto.Word\Fasetto.Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Marcus Gasberg\source\repos\Fasetto.Word\Fasetto.Word\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\Marcus Gasberg\source\repos\Fasetto.Word\Fasetto.Word\obj\Debug\Pages\LoginPage.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\MainWindow.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\App.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word_MarkupCompile.cache
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word_MarkupCompile.lref
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Fasetto.Word.exe.config
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Fasetto.Word.exe
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Fasetto.Word.pdb
@@ -36,11 +41,6 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Micro
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\PropertyChanged.xml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.csprojResolveAssemblyReference.cache
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\LoginPage.g.cs
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\MainWindow.g.cs
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\App.g.cs
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word_MarkupCompile.cache
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word_MarkupCompile.lref
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\App.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\LoginPage.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\MainWindow.baml

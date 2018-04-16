@@ -8,7 +8,7 @@ namespace Fasetto.Word
         /// <summary>
         /// The action to run
         /// </summary>
-        private Action action_;
+        private Action mAction;
         #endregion 
         #region Public Events
         /// <summary>
@@ -19,7 +19,7 @@ namespace Fasetto.Word
         #region Constructor
         public RelayCommand(Action action)
         {
-            action_ = action;
+            mAction = action;
         }
         #endregion
         #region Command Methods
@@ -38,7 +38,7 @@ namespace Fasetto.Word
         /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
-            action_();
+            mAction();
         }
         #endregion
     }
