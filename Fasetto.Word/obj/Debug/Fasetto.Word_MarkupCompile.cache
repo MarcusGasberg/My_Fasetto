@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\App.xaml
-7550430264
+11-79730566
 
-27-893663476
-15220239466
-Pages\LoginPage.xaml;MainWindow.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
+35-443847832
+151283071874
+Controls\Chat\ChatListControl.xaml;Controls\Chat\ChatListItemControl.xaml;Controls\SideMenuControl.xaml;Pages\ChatPage.xaml;Pages\LoginPage.xaml;MainWindow.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
 
 False
 

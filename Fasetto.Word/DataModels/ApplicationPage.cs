@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 /// </summary>
 namespace Fasetto.Word
 {
-    /// <summary>
-    /// Initial Login page
-    /// </summary>
     enum ApplicationPage
     {
+        /// <summary>
+        /// Initial Login page
+        /// </summary>
         Login = 0,
+        /// <summary>
+        /// The page for chat
+        /// </summary>
+        Chat = 1,
     }
 }

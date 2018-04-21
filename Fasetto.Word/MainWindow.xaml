@@ -41,9 +41,9 @@
                                         <DropShadowEffect ShadowDepth="0" Opacity="0.2"/>
                                     </Border.Effect>
                                 </Border>
+                                
                                 <!--The main window content -->
                                 <Grid>
-                                    
                                     <!--Corner clipping-->
                                     <Grid.OpacityMask>
                                         <VisualBrush Visual="{Binding ElementName=Container}"/>
@@ -108,13 +108,29 @@
             GlassFrameThickness="0"
             />
     </WindowChrome.WindowChrome>
+    <!--Main content-->
     <Border Background="{StaticResource WordBlueBrush}">
         <Grid>
-            <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" RenderTransformOrigin="0.484,0.496"/>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
             <!--Blue background images-->
             <Grid.Background>
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png"/>
             </Grid.Background>
+            
+            <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" RenderTransformOrigin="0.484,0.496"/>
+            
+            <!--Side Meun-->
+            <local:SideMenuControl>
+
+                <local:ChatListControl/>
+
+            </local:SideMenuControl>
+            
         </Grid>
         
     </Border>

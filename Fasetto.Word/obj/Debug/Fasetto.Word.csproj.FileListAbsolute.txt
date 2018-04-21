@@ -56,3 +56,11 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Faset
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.csproj.CopyComplete
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.exe
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.pdb
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\ChatPage.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\ChatPage.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\SideMenuControl.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListItemControl.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\SideMenuControl.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListControl.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListControl.baml
