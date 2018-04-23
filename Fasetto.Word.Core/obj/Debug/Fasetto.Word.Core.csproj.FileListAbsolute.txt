@@ -1,0 +1,12 @@
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Fasetto.Word.Core.pdb
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CoreCompileInputs.cache
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.pdb
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csprojResolveAssemblyReference.cache
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\PropertyChanged.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\PropertyChanged.xml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.g.resources
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CopyComplete

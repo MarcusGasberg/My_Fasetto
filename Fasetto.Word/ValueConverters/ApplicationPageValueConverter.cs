@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fasetto.Word.Core;
 
 namespace Fasetto.Word
 {
@@ -23,6 +24,9 @@ namespace Fasetto.Word
 
                 case ApplicationPage.Chat:
                     return new ChatPage();
+
+                case ApplicationPage.Register:
+                    return new RegisterPage();
 
                 default:
                     Debugger.Break();

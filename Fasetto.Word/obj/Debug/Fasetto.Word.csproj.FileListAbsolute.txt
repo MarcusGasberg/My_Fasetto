@@ -46,7 +46,6 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\MainWindow.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Styles\Colors.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Styles\Buttons.baml
-C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Styles\Windows.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Styles\Texts.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Styles\Fonts.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.g.resources
@@ -64,3 +63,7 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Contr
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\SideMenuControl.baml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListControl.g.cs
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\Chat\ChatListControl.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\RegisterPage.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Pages\RegisterPage.baml
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Fasetto.Word.Core.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\bin\Debug\Fasetto.Word.Core.pdb

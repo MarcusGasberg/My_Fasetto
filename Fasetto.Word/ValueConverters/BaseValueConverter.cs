@@ -20,7 +20,7 @@ namespace Fasetto.Word
         /// <summary>
         /// A single static instance of this value converter
         /// </summary>
-        private static T mConverter = null;
+        private static T Converter = null;
         #endregion
 
         #region Markup Extension Methods
@@ -34,7 +34,7 @@ namespace Fasetto.Word
             //if (mConverter == null)
             //mConverter = newT();
             //return mConverter;
-            return mConverter ?? (mConverter = new T());
+            return Converter ?? (Converter = new T());
         }
         #endregion
 
