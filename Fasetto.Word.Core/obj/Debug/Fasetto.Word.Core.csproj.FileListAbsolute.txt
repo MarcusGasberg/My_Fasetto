@@ -10,3 +10,5 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\PropertyChanged.xml
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.g.resources
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\obj\Debug\Fasetto.Word.Core.csproj.CopyComplete
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Ninject.dll
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word.Core\bin\Debug\Ninject.xml

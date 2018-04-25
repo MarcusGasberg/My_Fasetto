@@ -100,8 +100,6 @@ namespace Fasetto.Word
         /// </summary>
         public GridLength TitleHeightGridLength => new GridLength(TitleHeight + ResizeBorder);
 
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
-
 
         #endregion
         #region Commands
