@@ -42,7 +42,7 @@ namespace Fasetto.Word
         /// <summary>
         /// The smallest height the window can go to
         /// </summary>
-        public double WindowMinimumHeight { get; set; } = 500;
+        public double WindowMinimumHeight { get; set; } = 550;
 
         public bool Borderless => (mWindow.WindowState == WindowState.Maximized);
 

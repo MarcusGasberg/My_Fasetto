@@ -10,17 +10,9 @@ namespace Fasetto.Word
     /// <summary>
     /// a base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage<VM> : Page
-        where VM : BaseViewModel, new()
+    public class BasePage : Page
     {
-        #region Private Members
-        /// <summary>
-        /// Viewmodel associated with this page
-        /// </summary>
-        private VM mViewModel { get; set; }
-        #endregion
-
-        #region Public Properties
+        #region Public properties
         /// <summary>
         /// The animation that plays when the page first loads
         /// </summary>
@@ -35,26 +27,6 @@ namespace Fasetto.Word
         /// How long the animation takes to complete
         /// </summary>
         public float SlideSeconds { get; set; } = 0.8f;
-
-        /// <summary>
-        /// Viewmodel associated with this page
-        /// </summary>
-        public VM ViewModel
-        {
-            get => mViewModel;
-            set
-            {
-                //If nothing has changed return
-                if (mViewModel == value)
-                    return;
-                //update the value
-                mViewModel = value;
-
-                //Set the data context for this page
-                DataContext = mViewModel;
-            }
-        }
-
         #endregion
 
         #region Constructor
@@ -69,9 +41,6 @@ namespace Fasetto.Word
 
             //Listen out for the page loading
             Loaded += BasePage_LoadedAsync;
-
-            //Create a default view model
-            ViewModel = new VM();
         }
         #endregion
 
@@ -124,7 +93,55 @@ namespace Fasetto.Word
                     break;
             }
         }
-        
+
+        #endregion
+    }
+
+    /// <summary>
+    /// a base page with added ViewModel support
+    /// </summary>
+    public class BasePage<VM> : BasePage
+        where VM : BaseViewModel, new()
+    {
+        #region Private Members
+        /// <summary>
+        /// Viewmodel associated with this page
+        /// </summary>
+        private VM mViewModel { get; set; }
+        #endregion
+
+        #region Public Properties
+
+        /// <summary>
+        /// Viewmodel associated with this page
+        /// </summary>
+        public VM ViewModel
+        {
+            get => mViewModel;
+            set
+            {
+                //If nothing has changed return
+                if (mViewModel == value)
+                    return;
+                //update the value
+                mViewModel = value;
+
+                //Set the data context for this page
+                DataContext = mViewModel;
+            }
+        }
+
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        public BasePage() : base()
+        {
+            //Create a default view model
+            ViewModel = new VM();
+        }
         #endregion
     }
 }
