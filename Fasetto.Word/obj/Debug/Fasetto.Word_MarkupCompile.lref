@@ -1,7 +1,10 @@
 ﻿
 FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\App.xaml;;
-FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatListControl.xaml;;
-FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatListItemControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListItemControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListItemControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\PageHost.xaml;;
 FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\SideMenuControl.xaml;;
 FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\ChatPage.xaml;;
 FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\RegisterPage.xaml;;

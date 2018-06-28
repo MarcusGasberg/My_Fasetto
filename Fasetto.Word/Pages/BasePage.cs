@@ -26,7 +26,13 @@ namespace Fasetto.Word
         /// <summary>
         /// How long the animation takes to complete
         /// </summary>
-        public float SlideSeconds { get; set; } = 0.8f;
+        public float SlideSeconds { get; set; } = 0.5f;
+
+        /// <summary>
+        /// A flag to indiate if this page should animate out on load
+        /// Useful for when we are moving the page to another frame.
+        /// </summary>
+        public bool ShouldAnimateOut { get; set; }
         #endregion
 
         #region Constructor
@@ -52,8 +58,14 @@ namespace Fasetto.Word
         /// <param name="e"></param>
         private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
-            //Animate the page in
-            await AnimateInAsync();
+            //if we are setup to animate out on load
+            if (ShouldAnimateOut)
+                //Animate out the page
+                await AnimateOutAsync();
+            //Otherwise...
+            else
+                //Animate the page in
+                await AnimateInAsync();
         }
 
         /// <summary>

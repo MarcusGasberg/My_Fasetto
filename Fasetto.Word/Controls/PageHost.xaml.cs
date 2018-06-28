@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -30,6 +31,7 @@ namespace Fasetto.Word
 
         #region Constructor
         /// <summary>
+        /// Default 
         /// Constructor
         /// </summary>
         public PageHost()
@@ -47,7 +49,37 @@ namespace Fasetto.Word
         /// <param name="e"></param>
         private static void CurrentPagePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            //Get the frames
+            var newPageFrame = (d as PageHost).NewPage;
+            var oldPageFrame = (d as PageHost).OldPage;
+
+            //Store the current pagee content as the old page
+            var oldPageContent = newPageFrame.Content;
+
+            //Remove the current page from new page frame
+            newPageFrame.Content = null;
+
+            //Move the previous page into the old page frame
+            oldPageFrame.Content = oldPageContent;
+
+            //Animate out previous page when the Loaded event fires
+            //right after this call due to moving frames
+            if (oldPageContent is BasePage oldPage)
+            {
+                //Tell old page to animate out
+                oldPage.ShouldAnimateOut = true;
+
+                //Once it is done, remove it
+                Task.Delay((int)(oldPage.SlideSeconds*1000)).ContinueWith((T)=>
+                {
+                    //Remove old page
+                    Application.Current.Dispatcher.Invoke(() => oldPageFrame.Content = null);
+                    
+                });
+            }
+
+            //Set the new page content
+            newPageFrame.Content = e.NewValue;
         }
         #endregion
     }

@@ -55,9 +55,15 @@ namespace Fasetto.Word.Core
         {
             await RunCommandAsync(() => LoginIsRunning, async() => 
             {
-                await Task.Delay(500);
-                var email = Email;
-                var pass = (parameter as IHavePassword).SecurePassword.Unsecure(); //Never store password in variable!!    
+                await Task.Delay(1000);
+
+                //Go to chat page
+                IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat);
+
+                //var email = Email;
+
+                //IMPORTANT: Never store unsecure password in variable like this
+                //var pass = (parameter as IHavePassword).SecurePassword.Unsecure(); //Never store password in variable!!    
             });
         }
 
@@ -69,7 +75,7 @@ namespace Fasetto.Word.Core
         public async Task RegisterAsync()
         {
             //Go to register page
-            IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register;
+            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Register);
 
             await Task.Delay(1);
         }

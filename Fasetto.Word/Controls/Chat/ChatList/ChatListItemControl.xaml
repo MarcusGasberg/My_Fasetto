@@ -6,8 +6,7 @@
              xmlns:local="clr-namespace:Fasetto.Word"
              xmlns:core="clr-namespace:Fasetto.Word.Core;assembly=Fasetto.Word.Core"
              mc:Ignorable="d"
-             Height="60"
-             d:DesignHeight="60" d:DesignWidth="300">
+             d:DesignWidth="300">
     <UserControl.Resources>
         <Style x:Key="ContentStyle" TargetType="{x:Type ContentControl}">
             <Setter Property="Template">
@@ -31,9 +30,11 @@
                                     Visibility="{Binding NewContentAvailable, Converter={local:BooleanToVisibilityConverter}, ConverterParameter=True}"/>
 
                                 <!--Profile picture Padding-->
-                                <Border Grid.Column="0" Padding="8">
+                                <Border Grid.Column="0" 
+                                        Padding="8 15">
                                     <!--Profile picture background-->
                                     <Border Background="{Binding ProfilePictureRGB, Converter={local:StringRGBToBrushConverter}}"
+                                            Height="40"
                                         Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
                                         CornerRadius="{Binding ActualHeight, RelativeSource={RelativeSource Self}}">
                                         <!--Profile picture initials-->
@@ -41,7 +42,7 @@
                                                 VerticalAlignment="Center"
                                                 HorizontalAlignment="Center"
                                                 Foreground="{StaticResource ForegroundLightBrush}"
-                                                FontSize="{StaticResource FontSizeAverage}"
+                                                FontSize="{StaticResource FontSizeLarge}"
                                                 FontFamily="{StaticResource LatoRegular}"/>
                                     </Border>
                                 </Border>
@@ -49,10 +50,14 @@
                                 <!--Main Content-->
                                 <Border Grid.Column="1" Padding="0 0 8 0">
                                     <StackPanel VerticalAlignment="Center">
+                                        <!--Name-->
                                         <TextBlock Text="{Binding Name}" 
+                                                Padding="0 0 0 2"
                                                 Foreground="{StaticResource WordBlueBrush}"
                                                 FontFamily="{StaticResource LatoRegular}"/>
+                                        <!--Message-->
                                         <TextBlock Text="{Binding Message}" 
+                                                Padding="0 2 0 0"
                                                 Foreground="{StaticResource ForegroundDarkBrush}"
                                                 TextTrimming="CharacterEllipsis"
                                                 FontFamily="{StaticResource LatoRegular}"/>
@@ -66,7 +71,7 @@
                             <EventTrigger RoutedEvent="MouseEnter">
                                 <BeginStoryboard>
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource WordVeryLightBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color"/>
+                                        <ColorAnimation To="{StaticResource WordUltraLightBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color"/>
                                     </Storyboard>
                                 </BeginStoryboard>
                             </EventTrigger>
@@ -78,7 +83,7 @@
                                 </BeginStoryboard>
                             </EventTrigger>
                             <DataTrigger Binding="{Binding IsSelected}" Value="True">
-                                <Setter Property="Background" TargetName="background" Value="{StaticResource WordVeryLightBlueBrush}"/>
+                                <Setter Property="Background" TargetName="background" Value="{StaticResource WordUltraLightBlueBrush}"/>
                             </DataTrigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>

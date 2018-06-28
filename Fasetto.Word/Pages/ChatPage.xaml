@@ -10,7 +10,7 @@
       d:DesignHeight="700" d:DesignWidth="700"
       Title="Chat">
     <Border>
-        
+        <local:ChatMessageListControl/>
     </Border>
 
 </local:BasePage>

@@ -25,18 +25,18 @@
                         <StackPanel>
                             <!--Sign in header-->
                             <TextBlock Text="Sign in" 
-                                   FontSize="{StaticResource FontSizeLarge}" 
+                                   FontSize="{StaticResource FontSizeXXLarge}" 
                                    FontFamily="{StaticResource LatoRegular}"
                                    Foreground="{StaticResource WordBlueBrush}"/>
                             <!--Sign up subtext-->
                             <TextBlock Text="It's About to get fun" 
-                                       FontSize="{StaticResource FontSizeRegular}" 
+                                       FontSize="{StaticResource FontSizeLarge}" 
                                        FontFamily="{StaticResource LatoRegular}"
                                        Foreground="{StaticResource ForegroundDarkBrush}"
                                        Margin="0 0 0 20"/>
                             
                             <!--Email-->
-                            <TextBox Text="{Binding Email}"  Tag="Email"/>
+                            <TextBox Text="{Binding Email}"  Tag="Email" local:IsFocusedProperty.Value ="True"/>
                             
                             <!--Password-->
                             <PasswordBox x:Name="PasswordText" Tag="Password" Margin="0 0 0 30"/>
@@ -46,7 +46,8 @@
                                     local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     Command="{Binding LoginCommand}" 
                                     CommandParameter="{Binding ElementName=Page}" 
-                                    HorizontalAlignment="Center"/>
+                                    HorizontalAlignment="Center"
+                                    IsDefault="True"/>
                         </StackPanel>
                     </Border>
                     <Button Style="{StaticResource TextButton}" 
