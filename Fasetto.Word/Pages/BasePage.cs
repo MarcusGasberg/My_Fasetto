@@ -1,5 +1,6 @@
 ﻿using Fasetto.Word.Core;
 using System;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +11,7 @@ namespace Fasetto.Word
     /// <summary>
     /// a base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage : Page
+    public class BasePage : UserControl
     {
         #region Public properties
         /// <summary>
@@ -41,6 +42,10 @@ namespace Fasetto.Word
         /// </summary>
         public BasePage()
         {
+            //Don't bother animating in design time
+            if (DesignerProperties.GetIsInDesignMode(this))
+                return;
+
             //If we are animating in, hide to begin with
             if (PageLoadAnimation != PageAnimation.None)
                 Visibility = Visibility.Collapsed;
@@ -58,8 +63,8 @@ namespace Fasetto.Word
         /// <param name="e"></param>
         private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
-            //if we are setup to animate out on load
-            if (ShouldAnimateOut)
+                //if we are setup to animate out on load
+                if (ShouldAnimateOut)
                 //Animate out the page
                 await AnimateOutAsync();
             //Otherwise...
@@ -82,7 +87,7 @@ namespace Fasetto.Word
             {
                 case PageAnimation.SlideAndFadeInFromRight:
                     //Start the animation
-                    await this.SlideAndFadeInFromRightAsync(SlideSeconds);
+                    await this.SlideAndFadeInFromRightAsync(SlideSeconds, width: (int)Application.Current.MainWindow.Width);
                     break;
             }
         }
@@ -101,7 +106,7 @@ namespace Fasetto.Word
             {
                 case PageAnimation.SlideAndFadeOutToLeft:
                     //Start the animation
-                    await this.SlideAndFadeOutToLeftAsync(SlideSeconds);
+                    await this.SlideAndFadeOutToLeftAsync(SlideSeconds, width: (int)Application.Current.MainWindow.Width);
                     break;
             }
         }

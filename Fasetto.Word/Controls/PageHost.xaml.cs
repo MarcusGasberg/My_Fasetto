@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Fasetto.Word.Core;
+using System;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -37,6 +39,10 @@ namespace Fasetto.Word
         public PageHost()
         {
             InitializeComponent();
+            //If we are in design mode show the current page
+            //As the dependency object doesnt fire
+            if(DesignerProperties.GetIsInDesignMode(this))
+                NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage);
         }
 
         #endregion
@@ -49,6 +55,7 @@ namespace Fasetto.Word
         /// <param name="e"></param>
         private static void CurrentPagePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            
             //Get the frames
             var newPageFrame = (d as PageHost).NewPage;
             var oldPageFrame = (d as PageHost).OldPage;

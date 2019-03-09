@@ -7,10 +7,98 @@
       xmlns:core="clr-namespace:Fasetto.Word.Core;assembly=Fasetto.Word.Core"
       mc:Ignorable="d" 
       x:Name="Page"
-      d:DesignHeight="700" d:DesignWidth="700"
-      Title="Chat">
-    <Border>
-        <local:ChatMessageListControl/>
-    </Border>
+      d:DesignHeight="700" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--Title bar-->
+            <RowDefinition Height="Auto"/>
+            <!--Chat list-->
+            <RowDefinition Height="*"/>
+            <!--Message send box-->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!--Title bar-->
+        <Grid Height="50">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Title text-->
+            <TextBlock Text="Parnell"
+                       Foreground="{StaticResource ForegroundLightBrush}"
+                       FontSize="{StaticResource FontSizeXLarge}"
+                       FontFamily="{StaticResource LatoRegular}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Grid.ColumnSpan="2"
+                       />
+            <!--Main buttons-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FontAwesomeSearchIcon}"/>
+                <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FontAwesomeEllipsisVerticalIcon}"/>
+            </StackPanel>
+        </Grid>
+        
+        <!--Chat list-->
+        <local:ChatMessageListControl Grid.Row="1"/>
+
+        <!--Message send box-->
+        <Grid Grid.Row="2" 
+              MinHeight="50"
+              MaxHeight="114"
+              Background="{StaticResource ForegroundLightBrush}">
+            <Grid.ColumnDefinitions>
+                <!--Attach button-->
+                <ColumnDefinition Width="Auto"/>
+                <!--Text entry box-->
+                <ColumnDefinition Width="*"/>
+                <!--Additional buttons-->
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Attach button-->
+            <Button Style="{StaticResource IconGrowButton}"
+                    Height="{Binding MinHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
+                    Content="{StaticResource FontAwesomePaperClipIcon}"                    
+                    Foreground="{StaticResource ForegroundDarkBrush}"
+                    VerticalAlignment="Top"
+                    />
+
+            <!--Message Field-->
+            <TextBox Grid.Column="1"
+                     Tag="Write a message..."
+                     FontSize="{StaticResource FontSizeRegular}"
+                     VerticalAlignment="Center"
+                     Padding="0 10"
+                     BorderThickness="0"
+                     AcceptsReturn="True"
+                     AcceptsTab="True"
+                     VerticalScrollBarVisibility="Auto"
+                     />
+            
+            <!--Additional buttons-->
+            <StackPanel Grid.Column="2"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Top"
+                        Margin="0 0 8 0">
+                
+                <!--Emoji button-->
+                <Button Style="{StaticResource IconGrowButton}"
+                        Height="{Binding MinHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
+                        Content="{StaticResource FontAwesomeEmojiIcon}"
+                        Foreground="{StaticResource WordOrangeBrush}"/>
+                
+                <!--Send button-->
+                <Button Content="Send"
+                        Padding="8"
+                        FontSize="{StaticResource FontSizeRegular}"
+                        Background="{StaticResource WordGreenBrush}"
+                        />
+            </StackPanel>
+        </Grid>
+    </Grid>
 
 </local:BasePage>

@@ -12,7 +12,7 @@
         <ControlTemplate TargetType="UserControl">
 
             <!--Main Back ground of side menu-->
-            <Border Background="{StaticResource ForegroundLightBrush}">
+            <Border>
                 <!--Content-->
                 <Grid>
                     <Grid.RowDefinitions>
@@ -20,7 +20,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <!--Top Menu-->
-                    <Grid Height="50" Background="{StaticResource WordBlueBrush}">
+                    <Grid Height="50" Background="{StaticResource WordTransparentBlueBrush}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
@@ -39,7 +39,9 @@
                                 Content="{StaticResource FontAwesomeCogIcon}"/>
                     </Grid>
                     <!--The user content-->
-                    <ContentPresenter Grid.Row="1"/>
+                    <Border Grid.Row="1" Background="{StaticResource ForegroundLightBrush}">
+                        <ContentPresenter/>
+                    </Border>
                 </Grid>
             </Border>
         </ControlTemplate>
