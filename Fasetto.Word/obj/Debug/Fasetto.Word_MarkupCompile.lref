@@ -1,18 +1,22 @@
 ﻿
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\App.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListControl.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListControl.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListItemControl.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListItemControl.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\PageHost.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\SideMenuControl.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\ChatPage.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\RegisterPage.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\LoginPage.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\MainWindow.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Scroll.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Colors.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Buttons.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Texts.xaml;;
-FC:\Users\mrgas\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Fonts.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\App.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\BubbleContent.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatList\ChatListItemControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Chat\ChatMessage\ChatMessageListItemControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\Menu\VerticalMenu.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\PageHost.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Controls\SideMenuControl.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Dialogs\DialogMessageBox.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\DialogWindow.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\ChatPage.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\RegisterPage.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Pages\LoginPage.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\MainWindow.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Scroll.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Colors.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Buttons.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Texts.xaml;;
+FC:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\Styles\Fonts.xaml;;
 

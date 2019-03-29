@@ -27,5 +27,15 @@ namespace Fasetto.Word
 
             DataContext = new WindowViewModel(this);
         }
+
+        private void MainWindow_OnDeactivated(object sender, EventArgs e)
+        {
+            (DataContext as WindowViewModel).DimmableOverlayVisible = true;
+        }
+
+        private void MainWindow_OnActivated(object sender, EventArgs e)
+        {
+            (DataContext as WindowViewModel).DimmableOverlayVisible = false;
+        }
     }
 }

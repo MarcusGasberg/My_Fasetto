@@ -13,13 +13,18 @@ namespace Fasetto.Word
     /// <summary>
     /// View model for the custom flat window
     /// </summary>
-    class WindowViewModel : BaseViewModel
+    public class WindowViewModel : BaseViewModel
     {
         #region Private Members
         /// <summary>
         /// The window this view model controls
         /// </summary>
         private Window mWindow;
+
+        /// <summary>
+        /// The window resizer helper that keeps the window size correct in various states
+        /// </summary>
+        private WindowResizer mWindowResizer;
 
         /// <summary>
         /// The margin around the wiondow to allow for a drop shadow
@@ -30,6 +35,16 @@ namespace Fasetto.Word
         /// The radius of the edges of the window
         /// </summary>
         private int mWindowRadius = 10;
+
+        /// <summary>
+        /// The last known dock position
+        /// </summary>
+        private WindowDockPosition mDockPosition = WindowDockPosition.Undocked;
+
+        /// <summary>
+        /// True if we should have a dimmed overlay on the window
+        /// </summary>
+        public bool DimmableOverlayVisible { get; set; }
 
         #endregion
         #region Public Properties
@@ -44,12 +59,12 @@ namespace Fasetto.Word
         /// </summary>
         public double WindowMinimumHeight { get; set; } = 550;
 
-        public bool Borderless => (mWindow.WindowState == WindowState.Maximized);
+        public bool Borderless => (mWindow.WindowState == WindowState.Maximized || mDockPosition != WindowDockPosition.Undocked);
 
         /// <summary>
         /// The Size of the resize border around the window,
         /// </summary>
-         public int ResizeBorder => mWindow.WindowState == WindowState.Maximized ? 0 : 4;
+         public int ResizeBorder => 10;
 
         /// <summary>
         /// The Padding of the inner content of the main window
@@ -131,12 +146,7 @@ namespace Fasetto.Word
             //Listen out for window resizing
             mWindow.StateChanged += (sender, e) =>
             {
-                //Fire off events for all properties that are affected by a resize
-                OnPropertyChanged(nameof(ResizeBorderThickness));
-                OnPropertyChanged(nameof(OuterMarginSize));
-                OnPropertyChanged(nameof(OuterMarginSizeThickness));
-                OnPropertyChanged(nameof(WindowRadius));
-                OnPropertyChanged(nameof(WindowCornerRadius));
+                WindowResized();
             };
 
             //Create Commands
@@ -145,9 +155,40 @@ namespace Fasetto.Word
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, mWindow.PointToScreen(Mouse.GetPosition(mWindow))));
 
-            //Fix Window resize issue
-            var resizer = new WindowResizer(mWindow);
+            //Fix Window resize issue// Fix window resize issue
+            mWindowResizer = new WindowResizer(mWindow);
+
+            // Listen out for dock changes
+            mWindowResizer.WindowDockChanged += (dock) =>
+            {
+                // Store last position
+                mDockPosition = dock;
+
+                // Fire off resize events
+                WindowResized();
+            };
         }
+        #endregion
+
+        #region Private Helpers
+        
+
+        /// <summary>
+        /// If the window resizes to a special position (docked or maximized)
+        /// this will update all required property change events to set the borders and radius values
+        /// </summary>
+        private void WindowResized()
+        {
+            // Fire off events for all properties that are affected by a resize
+            OnPropertyChanged(nameof(Borderless));
+            OnPropertyChanged(nameof(ResizeBorderThickness));
+            OnPropertyChanged(nameof(OuterMarginSize));
+            OnPropertyChanged(nameof(OuterMarginSizeThickness));
+            OnPropertyChanged(nameof(WindowRadius));
+            OnPropertyChanged(nameof(WindowCornerRadius));
+        }
+
+
         #endregion
     }
 }
