@@ -22,11 +22,6 @@ namespace Fasetto.Word
         private Window mWindow;
 
         /// <summary>
-        /// The window resizer helper that keeps the window size correct in various states
-        /// </summary>
-        private WindowResizer mWindowResizer;
-
-        /// <summary>
         /// The margin around the wiondow to allow for a drop shadow
         /// </summary>
         private int mOuterMarginSize = 10;
@@ -35,11 +30,6 @@ namespace Fasetto.Word
         /// The radius of the edges of the window
         /// </summary>
         private int mWindowRadius = 10;
-
-        /// <summary>
-        /// The last known dock position
-        /// </summary>
-        private WindowDockPosition mDockPosition = WindowDockPosition.Undocked;
 
         /// <summary>
         /// True if we should have a dimmed overlay on the window
@@ -59,7 +49,7 @@ namespace Fasetto.Word
         /// </summary>
         public double WindowMinimumHeight { get; set; } = 550;
 
-        public bool Borderless => (mWindow.WindowState == WindowState.Maximized || mDockPosition != WindowDockPosition.Undocked);
+        public bool Borderless => (mWindow.WindowState == WindowState.Maximized);
 
         /// <summary>
         /// The Size of the resize border around the window,
@@ -154,19 +144,6 @@ namespace Fasetto.Word
             MaximizeCommand = new RelayCommand(() => mWindow.WindowState ^= WindowState.Maximized);
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, mWindow.PointToScreen(Mouse.GetPosition(mWindow))));
-
-            //Fix Window resize issue// Fix window resize issue
-            mWindowResizer = new WindowResizer(mWindow);
-
-            // Listen out for dock changes
-            mWindowResizer.WindowDockChanged += (dock) =>
-            {
-                // Store last position
-                mDockPosition = dock;
-
-                // Fire off resize events
-                WindowResized();
-            };
         }
         #endregion
 

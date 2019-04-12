@@ -104,3 +104,5 @@ C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Faset
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.csproj.CopyComplete
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.exe
 C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Fasetto.Word.pdb
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\SettingsControl.g.cs
+C:\Users\Marcus Gasberg\Documents\GitHub\My_Fasetto\Fasetto.Word\obj\Debug\Controls\SettingsControl.baml

@@ -36,7 +36,8 @@
                         <Button Grid.Column="2" 
                                 Foreground="{StaticResource WordDarkBlueBrush}" 
                                 Style="{StaticResource IconButton}" 
-                                Content="{StaticResource FontAwesomeCogIcon}"/>
+                                Content="{StaticResource FontAwesomeCogIcon}"
+                                Command="{Binding OpenCommand, Source={x:Static local:ViewModelLocator.SettingsViewModel}}"/>
                     </Grid>
                     <!--The user content-->
                     <Border Grid.Row="1" Background="{StaticResource ForegroundLightBrush}">

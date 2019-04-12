@@ -42,7 +42,7 @@ namespace Fasetto.Word
             //If we are in design mode show the current page
             //As the dependency object doesnt fire
             if(DesignerProperties.GetIsInDesignMode(this))
-                NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage);
+                NewPage.Content = (BasePage)new ApplicationPageValueConverter().Convert(IoC.ApplicationVm.CurrentPage);
         }
 
         #endregion
